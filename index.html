@@ -10,6 +10,7 @@
         .card {
             background-color: #444444;
         }
+
         .dropdown-menu {
             background-color: #444444;
         }
@@ -18,18 +19,20 @@
 <body class="text-white" style="background-color: #555555">
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <img alt="OpenMRS" class="nav-brand"
-         src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/OpenMRS_logo_2008.svg/1280px-OpenMRS_logo_2008.svg.png"
+         src="OpenMRS-Dark.png"
          style="height:5vh">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown mx-3">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-white" data-toggle="dropdown"
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-white"
+               data-toggle="dropdown"
                href="#" id="userDropdown" role="button"><i class="fas fa-user"></i> admin</a>
             <div aria-labelledby="userDropdown" class="dropdown-menu">
                 <a class="dropdown-item text-white" href="#">My Account</a>
             </div>
         </li>
         <li class="nav-item dropdown mx-3">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-white" data-toggle="dropdown"
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-white"
+               data-toggle="dropdown"
                href="#" id="locationDropdown" role="button"><i class="fas fa-map-marker-alt"></i> Locations</a>
             <div aria-labelledby="locationDropdown" class="dropdown-menu">
                 <a class="dropdown-item text-white" href="#">Registration Desk</a>
@@ -40,86 +43,75 @@
                 <a class="dropdown-item text-white" href="#">Pharmacy</a>
             </div>
         </li>
-        <li class="nav-item dropdown mx-3">
-            <a class="nav-link text-white" href="#"><i class="fas fa-sign-out-alt"></i></a>
-        </li>
     </ul>
 </nav>
-<div class="container mt-5" style="font-size: 0.9rem">
-    <div class="row justify-content-center">
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-search fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Find Patient Record
-            </div>
+<div id="container" class="container-fluid mt-5" style="width: 100%; height: 100%">
+    <div class="row justify-content-center mt-5">
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-search fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Find Patient Record"></button>
         </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-calendar fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Active Visits
-            </div>
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-calendar fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Active Visits"></button>
         </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-user fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Register a Patient
-            </div>
-        </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-heartbeat fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Capture Vitals
-            </div>
-        </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-calendar fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Appointment Scheduling
-            </div>
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-user fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Register a Patient"></button>
         </div>
     </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-folder fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Reports
-            </div>
+    <div class="row justify-content-center mt-5">
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-heartbeat fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Capture Vitals"></button>
         </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-hdd fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Data Management
-            </div>
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-calendar fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Appointment Scheduling"></button>
         </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-tasks fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                Configure Metadata
-            </div>
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-folder fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Reports"></button>
         </div>
-        <div class="card mx-3" style="width: 172px; height: 172px">
-            <div class="card-body d-flex justify-content-center align-items-center">
-                <i class="fas fa-cogs fa-4x"></i>
-            </div>
-            <div class="card-footer d-flex justify-content-center align-items-center px-0">
-                System Administration
-            </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-hdd fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Data Management"></button>
+        </div>
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-tasks fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Configure Metadata"></button>
+        </div>
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-cogs fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="System Administration"></button>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="card justify-content-center align-items-center mx-5"
+             style="width: 6rem; height: 6rem; border-radius: 1rem; border: 5px;">
+            <button class="fas fa-sign-out-alt fa-3x" type="button"
+                    style="background-color: transparent; border: unset; color: #fff" data-toggle="tooltip"
+                    data-placement="top" title="Log Out"></button>
         </div>
     </div>
 </div>
@@ -130,5 +122,10 @@
 <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/cdf191a349.js"></script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
 </body>
 </html>

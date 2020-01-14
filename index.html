@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>OpenMRS</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <style>
+        .card {
+            background-color: #444444;
+        }
+        .dropdown-menu {
+            background-color: #444444;
+        }
+    </style>
+</head>
+<body class="text-white" style="background-color: #555555">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <img alt="OpenMRS" class="nav-brand"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/OpenMRS_logo_2008.svg/1280px-OpenMRS_logo_2008.svg.png"
+         style="height:5vh">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown mx-3">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-white" data-toggle="dropdown"
+               href="#" id="userDropdown" role="button"><i class="fas fa-user"></i> admin</a>
+            <div aria-labelledby="userDropdown" class="dropdown-menu">
+                <a class="dropdown-item text-white" href="#">My Account</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown mx-3">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-white" data-toggle="dropdown"
+               href="#" id="locationDropdown" role="button"><i class="fas fa-map-marker-alt"></i> Locations</a>
+            <div aria-labelledby="locationDropdown" class="dropdown-menu">
+                <a class="dropdown-item text-white" href="#">Registration Desk</a>
+                <a class="dropdown-item text-white" href="#">Outpatient Clinic</a>
+                <a class="dropdown-item text-white" href="#">Inpatient Ward</a>
+                <a class="dropdown-item text-white" href="#">Isolation Ward</a>
+                <a class="dropdown-item text-white" href="#">Laboratory</a>
+                <a class="dropdown-item text-white" href="#">Pharmacy</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown mx-3">
+            <a class="nav-link text-white" href="#"><i class="fas fa-sign-out-alt"></i></a>
+        </li>
+    </ul>
+</nav>
+<div class="container mt-5" style="font-size: 0.9rem">
+    <div class="row justify-content-center">
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-search fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Find Patient Record
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-calendar fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Active Visits
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-user fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Register a Patient
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-heartbeat fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Capture Vitals
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-calendar fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Appointment Scheduling
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-folder fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Reports
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-hdd fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Data Management
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-tasks fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                Configure Metadata
+            </div>
+        </div>
+        <div class="card mx-3" style="width: 172px; height: 172px">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <i class="fas fa-cogs fa-4x"></i>
+            </div>
+            <div class="card-footer d-flex justify-content-center align-items-center px-0">
+                System Administration
+            </div>
+        </div>
+    </div>
+</div>
+<script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/cdf191a349.js"></script>
+</body>
+</html>
